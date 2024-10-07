@@ -94,12 +94,12 @@ window.onload = function() {
         if (fragmento === extension) {
           // Si coincide, cortar la parte coincidente y agregar "." + la extensión
           let dominioBase = dominio.slice(0, -extension.length); // Cortar la parte coincidente
-          let nuevoDominio = dominioBase + "." + extension; // Agregar "." y la extensión
-          dominiosModificados.push(nuevoDominio); // Guardar en el nuevo array
+          let nuevoDominio = dominioBase + "." + extension; // Agregar "." + la extensión
+          dominiosModificados.push(nuevoDominio); // Guardar en el nuevo arreglo
         } else {
           // Si no coincide, simplemente agrega "." y la extensión sin cortar
           let nuevoDominio = dominio + "." + extension;
-          dominiosModificados.push(nuevoDominio); // Guardar en el nuevo array
+          dominiosModificados.push(nuevoDominio); // Guardar en el nuevo arreglo
         }
       });
     });
@@ -116,3 +116,7 @@ window.onload = function() {
     return dominiosModificados;
   }
 };
+
+/* El cuarto desafío sería agregar 3 campos de formulario para ingresar los nombres del usuario y acumularlos y mostrarlos hasta que se vuelva a cargar el Windows Onload"
+
+*/
